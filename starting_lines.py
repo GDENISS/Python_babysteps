@@ -23,3 +23,23 @@ for i in my_list:
 print(counter)
 #the above is a simple example of adding numbers in a list using a for loop
 #the for loop will iterate through the list and add the numbers to the counter
+
+#Day three practice
+# finding duplicates in a list
+some_list = ['a','b','c','b','d','e','c','c']
+
+Duplicates = []
+
+for i in some_list:
+    if some_list.count(i) > 1:
+        if i not in Duplicates:
+            Duplicates.append(i)
+
+print(Duplicates)
+
+#Another method 😂2.0 list damn comprehensions.
+Duplicates = [i for i in some_list if  some_list.count(i)>1]
+
+print(list(set(Duplicates)))
+# The second method is a quick way to find duplicates in a list using list comprehensions
+#list comprehensions are unique mordern way of qenerating list.
