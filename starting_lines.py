@@ -43,3 +43,14 @@ Duplicates = [i for i in some_list if  some_list.count(i)>1]
 print(list(set(Duplicates)))
 # The second method is a quick way to find duplicates in a list using list comprehensions
 #list comprehensions are unique mordern way of qenerating list.
+
+#Day four practice
+#finding the highest even number in a list using a function
+
+def highest_even(li):
+    evens = []
+    for i in li:
+        if i % 2 == 0:
+            evens.append(i)
+    return max(evens)
+print(highest_even([10,2,86,4,6,8,24]))
