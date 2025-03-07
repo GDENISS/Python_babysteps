@@ -54,3 +54,40 @@ def highest_even(li):
             evens.append(i)
     return max(evens)
 print(highest_even([10,2,86,4,6,8,24]))
+
+#Day five practice
+#Creating a class
+
+class PlayerCharacter:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def run(self):
+        print('run')
+
+player1 = PlayerCharacter('Cindy', 44)
+
+print(player1.name)
+print(player1.age)
+
+#the above is a simple example of creating a class in python
+#the class has two attributes name and age  
+#the class also has a method run that prints 'run'
+#an object player1 is created using the class PlayerCharacter
+
+
+class car:
+    def __init__(self, make,model):
+        self.make = make
+        self.model = model
+
+print (car('Range Rover', 'Vogue'))
+car1 = car('Range Rover', 'Vogue')
+car2 = car('Toyota', 'Corolla')
+
+print(car1.model)
+
+#the above class shows a simpe example of a class with two attributes make and model
+#two objects car1 and car2 are created using the class car
+#the object car1 is printed to show the model attribute
