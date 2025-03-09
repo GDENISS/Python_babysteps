@@ -91,3 +91,36 @@ print(car1.model)
 #the above class shows a simpe example of a class with two attributes make and model
 #two objects car1 and car2 are created using the class car
 #the object car1 is printed to show the model attribute
+
+#Day six practice
+# Define a base class 'User'
+class User():
+    # Method to simulate signing in
+    def sign_in(self):
+        print('logged in')
+
+# Define a derived class 'Wizard' that inherits from 'User'
+class Wizard(User):
+    # Constructor method to initialize Wizard objects
+    def __init__(self, name, power):
+        # Instance variables to store the name and power of the wizard
+        self.name = name
+        self.power = power
+
+    # Method to simulate an attack
+    def attack(self):
+        print(f'attacking with power of {self.power}')
+
+# Define another derived class 'Archer' that inherits from 'User'
+class Archer(User):
+    # Constructor method to initialize Archer objects
+    def __init__(self, name, num_arrows):
+        # Instance variables to store the name and number of arrows
+        self.name = name
+        self.num_arrows = num_arrows
+
+    # Method to simulate an attack
+    def attack(self):
+        print(f'attacking with arrows: arrows left-{self.num_arrows}')
+
+    
