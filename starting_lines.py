@@ -123,4 +123,18 @@ class Archer(User):
     def attack(self):
         print(f'attacking with arrows: arrows left-{self.num_arrows}')
 
-    
+#Day 7 Practice!
+# Reading files in python
+with open('whoops.txt') as my_file:
+    # Open the text.txt we made earlier
+    # We can now read the file
+    print(my_file.read())
+    # But what happens if we try to read it again?
+    my_file.seek(0)
+    # Seek to the start of file (index 0)
+    my_file.seek(0)
+    # Now read again
+    print(my_file.read())
+    # Readlines returns a list of the lines in the file
+    my_file.seek(0)
+    print(my_file.readlines())
