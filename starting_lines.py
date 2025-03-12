@@ -125,6 +125,8 @@ class Archer(User):
 
 #Day 7 Practice!
 # Reading files in python
+
+#file I/O
 with open('whoops.txt') as my_file:
     # Open the text.txt we made earlier
     # We can now read the file
@@ -138,3 +140,9 @@ with open('whoops.txt') as my_file:
     # Readlines returns a list of the lines in the file
     my_file.seek(0)
     print(my_file.readlines())
+
+#Day 8 Practice
+# Writing to files in python
+with open('whoops.txt', mode='r+') as my_file:
+    text = my_file ('This is really interesting 😁')
+    print (my_file.readlines())
