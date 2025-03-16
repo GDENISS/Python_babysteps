@@ -127,6 +127,7 @@ class Archer(User):
 # Reading files in python
 
 #file I/O
+#To ensure this part works create a file in your working directory and reaad it.
 with open('whoops.txt') as my_file:
     # Open the text.txt we made earlier
     # We can now read the file
@@ -144,5 +145,6 @@ with open('whoops.txt') as my_file:
 #Day 8 Practice
 # Writing to files in python
 with open('whoops.txt', mode='r+') as my_file:
+    # the part of mode = 'r+' allows one to read and write into a file. 
     text = my_file ('This is really interesting 😁')
     print (my_file.readlines())
