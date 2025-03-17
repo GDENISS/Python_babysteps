@@ -148,3 +148,50 @@ with open('whoops.txt', mode='r+') as my_file:
     # the part of mode = 'r+' allows one to read and write into a file. 
     text = my_file ('This is really interesting 😁')
     print (my_file.readlines())
+
+#first I apologise I worked on day nine and failed to commit ):
+#this is new coctent for day nine
+#difference between append() and extend() in Python
+#append() increases the list length by 1, while extend() increases it by the length of the iterable
+
+my_list1 = [1,2,3,4,5,6,7,8,9]
+
+my_list1.append(10)
+
+print (my_list1)
+
+# extend
+
+my_list2 = [2,4,6,8,10]
+my_list3 = [1,3,5,7,9]
+
+my_list2.extend(my_list3)
+
+print(my_list2)
+
+#I decided to add a sorted method to ensure the list is logical.
+print(sorted(my_list2))
+
+
+#Day 10
+
+def is_palindrome(s):
+    cleaned = ' '.join(char.lower()for char in s if char.isalnum())
+    return cleaned == cleaned[::-1]
+
+print(is_palindrome("A man, a plan, a canal: Panama"))
+print(is_palindrome("race a car"))
+
+# The above is a simple function that checks a palindrome
+#Day 11
+
+def second_largest(numbers):
+    new_num = sorted(numbers)
+    ascend = new_num[::-1]
+    print(ascend[1])
+
+second_largest([5, 2, 9, 1, 7, 6, 3])
+#this is a hypothetical idea
+
+
+
