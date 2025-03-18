@@ -184,6 +184,7 @@ print(is_palindrome("race a car"))
 
 # The above is a simple function that checks a palindrome
 #Day 11
+# finding second largest number in a list
 
 def second_largest(numbers):
     new_num = sorted(numbers)
@@ -192,6 +193,22 @@ def second_largest(numbers):
 
 second_largest([5, 2, 9, 1, 7, 6, 3])
 #this is a hypothetical idea
+# The real way of finding the second largest number using O(n)
+def second_largest(numbers):
+    
+    largest = float('-inf')
+    second = float('-inf')
+    
+    for num in numbers:
+        if num > largest :
+            second = largest
+            largest = num
+        elif num > second and num != largest :
+            second = num
 
+    return second
 
+print (second_largest([5, 2, 9, 1, 7, 6, 3]))
+
+#This is a more logical way of finding the second largest value in alist.
 
