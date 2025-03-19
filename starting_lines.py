@@ -211,4 +211,21 @@ def second_largest(numbers):
 print (second_largest([5, 2, 9, 1, 7, 6, 3]))
 
 #This is a more logical way of finding the second largest value in alist.
+#Day eleven is already here 
+
+def merged_sorted(List1,List2):
+    for i in List1:
+        List2.append(i)
+    return sorted(List2)
+
+print(merged_sorted([1, 3, 5],[2, 4, 6]))
+
+#merging two list and ensuring they are well sorted
+#infact it is already day twelve
+
+def merged_sorted(List_1,List_2):
+    combined = List_1 + List_2
+    return sorted(combined)
+
+print(merged_sorted([1, 3, 5],[2, 4, 6]))
 
