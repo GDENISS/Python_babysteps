@@ -229,3 +229,24 @@ def merged_sorted(List_1,List_2):
 
 print(merged_sorted([1, 3, 5],[2, 4, 6]))
 
+#Write a program that accepts user input to create two sets of integers. Then, create a new set that contains only the elements that are common to both sets.
+
+def sets_data():
+    set_a = input('Please enter numbers separated by space: ')
+    set_b = input('Please enter numbers separated by space: ')
+
+    integer_set_a = [x for x in set_a.split()]
+    integer_set_b = [i for i in set_b.split()]
+
+    new_set = []
+
+    for x in integer_set_a:
+        for i in integer_set_b:
+            if x == i:
+                new_set.append(x)
+    return set(new_set)
+
+
+
+print(sets_data())
+#this is how we get to week 13 in style.
