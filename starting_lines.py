@@ -250,3 +250,17 @@ def sets_data():
 
 print(sets_data())
 #this is how we get to week 13 in style.
+
+# Time for a second week  wrap up
+# We create a partner to help us in preparing for the new dream
+
+def ignite_future():
+    start = time.time()
+    while True:
+        elapsed = time.time() - start
+        print(f"Rendering Vision: {elapsed:.1f}s elapsed | Stand by for the shift...")
+        time.sleep(1)  # Simulates the build-up to something big
+
+ignite_future()
+
+#Thankyou for the company.
