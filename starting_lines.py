@@ -264,3 +264,30 @@ def ignite_future():
 ignite_future()
 
 #Thankyou for the company.
+#As we start another week lets reflect on whhat we have been doing 
+#The basic of python starts with the syntax the elememts of good code starts with
+#Clean; ensure the code is up to standard, by ensuring we have the correct method for this
+#readerbillity; let your code be as simpe as posible.achieved through commenting.
+#Predicability; let the code be easy to understand and predictable.
+#DRY; Do not repeat your self,avoid redundant code and meethods
+#Understand the data structures
+#ok that said and done lets do something fun:
+
+picture = [
+    [0,0,0,1,0,0,0],
+    [0,0,1,1,1,0,0],
+    [0,1,1,1,1,1,0],
+    [1,1,1,1,1,1,1],
+    [0,0,0,1,0,0,0],
+    [0,0,0,1,0,0,0]
+] #we created a matrix representing an image of a tree
+
+for row in picture: #looping through the matrix to identify pixels and non pixels.
+    for pixel in row:
+        if pixel == 1:
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print('')
+
+# ther we go we created a christmas tree.
