@@ -291,3 +291,29 @@ for row in picture: #looping through the matrix to identify pixels and non pixel
     print('')
 
 # ther we go we created a christmas tree.
+
+
+# simple if statements:
+def calculate_discount(price,discount):
+    
+    if discount >= 20:
+        discount = discount/100
+        discout_price = price * discount
+        new_price = price - discout_price
+        return new_price
+    else:
+        return price
+   
+
+#practical applications
+
+price = float(input("Enter the original price of the item: "))
+discount = float(input("Enter the discount percentage (e.g., 20 for 20%): "))
+
+
+final_price = calculate_discount(price, discount)
+
+if discount >= 20:
+    print(f"Final price after {discount}% discount: {final_price: }")
+else:
+    print(f"No discount applied. Original price: {price: }")
