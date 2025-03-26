@@ -146,7 +146,7 @@ with open('whoops.txt') as my_file:
 # Writing to files in python
 with open('whoops.txt', mode='r+') as my_file:
     # the part of mode = 'r+' allows one to read and write into a file. 
-    text = my_file ('This is really interesting 😁')
+    my_file.write('This is really interesting 😁')
     print (my_file.readlines())
 
 #first I apologise I worked on day nine and failed to commit ):
