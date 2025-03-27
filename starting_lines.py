@@ -317,3 +317,30 @@ if discount >= 20:
     print(f"Final price after {discount}% discount: {final_price: }")
 else:
     print(f"No discount applied. Original price: {price: }")
+
+# I thought maybe we could revisit the files and how to work with them
+
+input_text = """
+This is the first line of the text file.
+Here is another line to add more content.
+Python programming is fun and versatile.
+We can process text files easily with Python.
+Let's count words and convert text to uppercase.
+"""
+with open("input.txt", mode = 'r+') as my_file:
+    my_file.write(input_text)
+    
+
+with open('input.txt', mode='r') as my_file:
+    content = my_file.read()
+
+print(content)
+num_words = len(content.split())
+print(num_words)
+
+upper_case = content.upper()
+
+with open('Output.txt', mode='r+') as New_file:
+    New_file.write(f"Processed Text:\n{upper_case}\n\nWord Count: {num_words}")
+
+#We need to create two files input.txt and Output.txt
