@@ -344,3 +344,21 @@ with open('Output.txt', mode='r+') as New_file:
     New_file.write(f"Processed Text:\n{upper_case}\n\nWord Count: {num_words}")
 
 #We need to create two files input.txt and Output.txt
+
+#Recursive function
+def tricky_function(x):
+    if x > 0:
+        return x + tricky_function(x - 1)
+    else:
+        return 0 
+
+result = tricky_function(5)
+#the output of the function is 15
+
+x = 0
+while x < 20:
+    x += 1
+    if x % 2 != 0:
+        print(x)
+
+# finding the odd numbers between 0 and 20
