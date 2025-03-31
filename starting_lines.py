@@ -362,3 +362,31 @@ while x < 20:
         print(x)
 
 # finding the odd numbers between 0 and 20
+
+
+# today we dive into some python interview questions
+# #1. Reverse a string without using built-in functions.
+
+def reverse_string(s):
+    reversed_str = ''
+    for char in s:
+        reversed_str = char + reversed_str
+    return reversed_str
+
+reverse_string("Hello, World!") # Output: !dlroW ,olleH
+
+#fibbonacci sequence
+def fib(number):
+    a = 0
+    b = 1
+    for i in range(number):
+        yield a
+        temp = a
+        a = b
+        b = temp + b    
+
+for i in fib(20):
+    print(i)
+
+# The above is a simple example of a generator function that generates the Fibonacci sequence up to a given number.
+# The generator function uses the yield keyword to produce a series of values one at a time, allowing for efficient memory usage.
